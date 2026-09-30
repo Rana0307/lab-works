@@ -1,0 +1,26 @@
+:root {
+  --green: #1f8a5b;
+  --green-dark: #166a45;
+  --orange: #f28c28;
+  --bg: #f6f8f7;
+  --text: #24322c;
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: "Segoe UI", Arial, sans-serif; background: var(--bg); color: var(--text); }
+.container { max-width: 1100px; margin: 0 auto; padding: 0 16px; }
+
+/* page */
+.section { padding: 32px 0; }
+.page-title { text-align: center; font-size: 2rem; margin: 0 0 16px; color: var(--green-dark); }
+.card { background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 1px 4px rgba(0,0,0,.08); }
+
+@media (max-width: 800px) {
+  .app-burger { display: block; }
+  .app-menu { display: none; width: 100%; flex-direction: column; align-items: stretch; padding-bottom: 8px; }
+  .app-menu.open { display: flex; }
+}
+
+/* 2.1-2.3: энгийн header */
+.simple-header { background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,.15); padding: 12px 0; }
+.simple-header h1 { margin: 0 0 8px; font-size: 1.3rem; color: var(--green-dark); }
+.simple-header a { display: inline-block; margin-right: 8px; padding: 6px 12px; border-radius: 6px; background: #e6f3ec; color: var(--green-dark); text-decoration: none; font-weight: 600; }
